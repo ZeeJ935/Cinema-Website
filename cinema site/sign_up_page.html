@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Sign Up and Sign In</title>
+    <link rel="stylesheet" href="sign_up_page_css.css" />
+  </head>
+  <body>
+    <div class="home">
+
+      <a style="text-decoration: none;", href="cinema.html">
+      <h1 style="color: white;">Home</h1></a>
+    </div>
+    
+    <div class="box">
+      
+      <span class="borderline"> </span>
+      <form>
+        <div class="inputBox">
+          <h2>Sign Up</h2>
+          <input type="text" required="Required!" />
+          <span>Username</span>
+          <i> </i>
+        </div>
+
+        <div class="inputBox">
+          <input type="password" required="Required!" />
+          <span>Password</span>
+          <i> </i>
+        </div>
+
+        <div class="inputBox">
+          <input type="password" required="Required!" />
+          <span>Confirm Password</span>
+          <i> </i>
+        </div>
+
+        <div class="inputBox">
+          <input type="email" required="Required!" />
+          <span>Email</span>
+          <i> </i>
+        </div>
+
+        <div class="inputBox">
+          <input type="number" min="1" required="Required!" />
+          <span>Age</span>
+          <i> </i>
+        </div>
+
+        <div class="inputBox">
+          <input
+            type="text"
+            pattern="^[0-9]{5}-[0-9]{7}-[0-9]{1}$"
+            title="CNIC_SAMPLE:12345-1234567-1"
+            required="Required!"
+          />
+          <span>CNIC</span>
+          <i> </i>
+        </div>
+
+        <div class="inputBox">
+          <input
+            type="text"
+            pattern="^[0-9]{4}-[0-9]{7}$"
+            title="PHONE_NUMBER_SAMPLE:0123-1234567"
+            required="Required!"
+          />
+          <span>Phone Number</span>
+          <i> </i>
+        </div>
+        <div class="butsub">
+          <input type="submit" value="Sign Up" />
+        </div>
+        <div class="links">
+          <p>Already Have An Account?</p>
+          <a href="login_page.html">Login</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

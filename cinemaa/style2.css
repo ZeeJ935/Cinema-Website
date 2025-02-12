@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Sen', sans-serif;
+}
+body h1{
+    color: #777;
+}
+.meh{
+    font-size: 20px;
+    
+}
+.eh {
+    text-decoration: none;
+    color: 444451;
+    font-weight: 500;
+    font-size: 20px;
+    background-image: linear-gradient(45deg,#000000,#444451);
+    border-radius: 50px;
+    display: inline-block;
+}
+.eh button:hover{
+    background-image: linear-gradient(45deg,#444451,#000000);
+    border-radius: 50px;
+    border-style: inset;
+}
+
+.eh {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    background-image: linear-gradient(45deg,#000000,#444451);
+    border-radius: 50px;
+    display: inline-block;
+}
+.seat
+{
+    background-color: #444451;
+    height: 30px; 
+    width: 35px;
+    margin: 6px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}
+
+.row
+{
+    display: flex;
+
+}
+
+.seat.selected
+{
+    background-color: turquoise;
+}
+
+.seat.occupied {
+    background-color: white;
+}
+
+.seat:nth-of-type(2){
+    margin-right: 25px;
+}
+.seat:nth-of-type(9){
+    margin-left:25px ;
+}
+.seat:not(.occupied):hover
+{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+ .showcase .seat:not(.occupied):hover{
+    cursor: default;
+    transform: scale(1);
+ }
+
+ .showcase {
+    background-color: rgba(0,0,0,0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .showcase li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+ }
+
+ .showcase li small{
+    margin-left: 10px;
+ }
+
+ .container{
+    perspective: 1000px;
+    margin-bottom: 30px;
+ }
+
+ @media print {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 12pt; /* Adjust font size for print */
+    }
+    .non-print {
+        display: none; /* Hide elements not necessary for print */
+    }
+    /* Ensure content is aligned and formatted for portrait printing */
+    .page-content {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}

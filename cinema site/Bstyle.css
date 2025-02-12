@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sen', sans-serif; 
+    color: #ffffff;
+}
+.backgrounds{
+    width: 100%;
+    height: 100vh;
+    background-color: #110011;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 65px;
+    color: #ffffff;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-weight: 500;
+    background-image: linear-gradient(45deg,#cc66ff,#00FFFF);
+    font-size: 25px;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+}
+nav ul li a:hover{
+    background-image: linear-gradient(45deg,#00FFFF,#cc66ff);
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    border-style: inset;
+}
+.cont h1{
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    background-image: linear-gradient(45deg,#cc66ff,#00FFFF);
+    padding: 15px;
+    border-radius: 40px;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.cont a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 10px;
+    background-image: linear-gradient(45deg,#cc66ff,#00FFFF);
+    margin: 20px 600px;
+    padding: 15px 10px;
+    border-radius: 50px;
+    display: block;
+    text-align: center;
+}
+.cont a:hover{
+    background-image: linear-gradient(45deg,#00FFFF,#cc66ff);
+    border-radius: 30px;
+    border-style: inset;
+}
+.cont{
+     color: white;
+     font-weight: 500;
+     font-size: 30px;
+     padding: 10px;
+     display: block;
+     text-align: center;
+}
+.movieboy{
+    color: black;
+    width: 150px;
+    height: 20px;
+}
+.Cityboy{
+    color: black;
+    width: 150px;
+    height: 20px;
+}
+.dayboy{
+    color: black;
+    width: 150px;
+    height: 20px;
+}
+.timeboy{
+    color: black;
+    width: 150px;
+    height: 20px;
+}
+.pesaboy{
+    color: black;
+    width: 150px;
+    height: 20px;
+}
+
+

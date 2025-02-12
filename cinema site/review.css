@@ -1,0 +1,84 @@
+.html, body{
+    background-color: #151515;
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    overflow: hidden;
+  }
+  .movie-poster img{
+    margin-left: 100px;
+    max-width: 400px;
+    margin-right: 20px;
+    border-radius: 20px;
+    height: auto;
+    }
+
+
+  @media (max-width: 768px) {
+    .movie {
+      flex-wrap: wrap;
+    }
+    
+    .movie-poster,
+    .movie-trailer {
+      max-width: 100%;
+    }
+  }
+  .movie-description {
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Sen', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 30px;
+
+  }
+  
+  
+  .rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .star {
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0.5rem;
+    color: white;
+  }
+  
+  .star:hover,
+  .star.selected {
+    color: gold;
+  }
+  .revin{
+    color: white;
+    font-family: 'Sen', sans-serif;
+  }
+  
+  .review-container {
+    display: none;
+    margin-top: 1rem;
+  }
+  
+  .review-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .review-container label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .review-container textarea {
+    height: 4rem;
+    margin-bottom: 0.5rem;
+    width: 30rem;
+  }
+  
+  

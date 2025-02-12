@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment_page_css.css" />
+  </head>
+
+  <body>
+    <div class="box">
+      <span class="borderline"> </span>
+      <form>
+        <div class="inputBox">
+          <h2>Payment</h2>
+          <input type="text" required="Required!" />
+          <span>Name</span>
+          <i> </i>
+        </div>
+
+        <div class="inputBox">
+          <input type="email" required="Required!" />
+          <span>Email</span>
+          <i> </i>
+        </div>
+
+        <div class="inputBox">
+          <input
+            type="text"
+            title="CARD_NUMBER_SAMPLE:1234 1234 1234 1234"
+            pattern="^[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}$"
+            required="Required!"
+          />
+          <span>Card Number</span>
+          <i> </i>
+        </div>
+
+        <div class="inputBox">
+          <input
+            type="text"
+            pattern="^[0-9]{2}-[0-9]{4}$"
+            title="CARD_EXPIRY_DATE_SAMPLE:02-2023"
+            required="Required!"
+          />
+          <span>Card Expiry Date</span>
+          <i> </i>
+        </div>
+
+        <div class="inputBox">
+          <input type="text" required="Required!" />
+          <span>Card CVC</span>
+          <i> </i>
+        </div>
+
+        <div class="butsub">
+          <input type="submit" value="Pay Now" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
